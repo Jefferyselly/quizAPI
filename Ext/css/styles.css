@@ -1,0 +1,27 @@
+body{
+    margin : 0;
+    padding :0;
+}
+@media only screen and (min-width : 768px){
+#quizUploader{
+    margin : 0 30%;
+    width : 40%
+}
+}
+#quizUploader textarea, #quizUploader textarea:focus, #quizUploader textarea:hover, #quizUploader textarea:active{
+    border : none;
+    outline : none;
+    font-size: 1.5em;
+    height: 150px;
+}
+#quizUploader .card-content:first-child{
+   height : 150px
+}
+#uploaderStatus{
+    background-color: rgb(74, 197, 127);
+    border-top-left-radius: 2px;
+    bottom-top-right-radius: 2px;
+    padding : 10px;
+    font-weight : bold;
+    color: white;
+}

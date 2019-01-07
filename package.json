@@ -1,0 +1,15 @@
+{
+  "name": "quizapi",
+  "version": "1.0.0",
+  "description": "A Quiz API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Quiz",
+    "CBT"
+  ],
+  "author": "Jeffery selly",
+  "license": "ISC"
+}

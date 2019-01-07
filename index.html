@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Quiz API</title>
+    
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="plugins/materialize/css/materialize.css">
+    <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="plugins/animate/animate.min.css">
+    <!-- / -->
+
+    <link rel="stylesheet" href="Ext/css/styles.css">
+
+    
+</head>
+<body>
+        
+        
+       
+        <div class="container" id="quizUploader"> 
+                <div id="uploaderStatus" class="hide animated tada"></div>
+                <br><br><br>
+        <div class="card">
+            <form method="get" id="uploadQuiz">
+
+            <div class="card-content">
+              <p>
+                  <textarea name="question" id=""  placeholder="Type Question  ..." ></textarea>
+              </p>
+            </div>
+            
+            <div class="card-tabs">
+              <ul class="tabs tabs-fixed-width">
+                <li class="tab"><a class="active" href="#test4">Option A</a></li>
+                <li class="tab"><a href="#test5">Option B</a></li>
+                <li class="tab"><a href="#test6">Option C</a></li>
+                <li class="tab"><a href="#test7">Option D</a></li>
+              </ul>
+            </div>
+            <div class="card-content grey lighten-4">
+              <div id="test4"><input type="text" placeholder="Type Option..." name="optionA"></div>
+              <div id="test5"><input type="text" placeholder="Type Option..." name="optionB"></div>
+              <div id="test6"><input type="text" placeholder="Type Option..." name="optionC"></div>
+              <div id="test7"><input type="text" placeholder="Type Option..." name="optionD"></div>
+            </div>
+            <button class="btn-floating halfway-fab waves-effect waves-light red" type="submit"><i class="fa fa-arrow-circle-right fa-lg" id="uploaderBtn"></i></button>
+            </form>
+          </div>
+        </div>
+
+
+        <script src="plugins/jquery.min.js"></script>
+  <script src="plugins/materialize/js/materialize.min.js"></script>  
+  <script>
+      $(document).ready(function(){
+          var uploaderStatus = $('#uploaderStatus');
+
+          var uploadQuiz  = $('#uploadQuiz');
+
+          uploadQuiz.on('submit',() => {
+              uploaderStatus.removeAttr('class');
+              uploaderStatus.attr('class','show-on-small show-on-medium show-on-large');
+              uploaderStatus.text ('Changes Saved');
+              
+          })
+
+
+      })
+  </script>
+</body>
+</html>
