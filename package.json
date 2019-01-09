@@ -11,5 +11,10 @@
     "CBT"
   ],
   "author": "Jeffery selly",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "lodash": "^4.17.11",
+    "mongoose": "^5.4.3"
+  }
 }
